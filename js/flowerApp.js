@@ -21,11 +21,9 @@ var heirloomRoses = new app.singleFlower({
 });
 
 var flowerGroup = new app.FlowersCollection([
-  redRoses, rainbowRoses
+  redRoses, rainbowRoses,heirloomRoses
 ]);
 
-flowerGroup.add(heirloomRoses);
+var flowerGroupView = new app.allFlowersView({ collection: flowerGroup});
 
-flowerGroup.remove(redRoses);
-
-console.log(flowerGroup.toJSON());
+$("#allFlowers").html(flowerGroupView.render().el);
