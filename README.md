@@ -1,4 +1,4 @@
-# Hansel and Patel
+# Hansel and Petal
 A single page application using javascript library backbone.js.
 # Features
 
